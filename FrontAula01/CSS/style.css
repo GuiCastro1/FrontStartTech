@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../assets/fontes/static/Dosis-Medium.ttf') format('woff2'),
+        url('../fonts/myfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+
+    background-color: #c3d8e8;
+}
+
+main {
+    position: relative;
+    width: 90%;
+    height: 700px;
+    background-color: #c3d8e8;
+    margin: auto;
+}
+
+#cabecalho {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 255, 0);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.menu {
+    position: relative;
+    width: 35%;
+    height: auto;
+    background-color: rgba(137, 43, 226, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.menu a {
+    font-family: 'MyFont';
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botao-conectar {
+    /* font-family: 'MyFont';
+    font-size: 12px;
+    background-color: #c3d8e8;
+    border: 2px solid rgb(0, 118, 161);
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    height: auto;
+    font-weight: bold;
+    float: left; */
+    width: 100px;
+    height: auto;
+    
+    font-family: 'MyFont';
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    background-color:rgba(255, 255, 255, 0);
+    color:  rgb(0, 118, 161);
+    border: ;
+}
+
+.botao-cadastrar {
+    width: 200px;
+    height: auto;
+    font-family: 'MyFont';
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(0, 118, 161);
+    color: white;
+    border: none;
+}
+
+
+.menu-direito {
+    position: relative;
+    height: 50px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+#meio {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: rgba(127, 255, 212, 0);
+    padding: 5%;
+}
+
+#texto {
+    width: 50%;
+    background-color: aquamarine;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15%;
+}
+
+#texto h2 {
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    font-weight: bolder;
+
+}
+
+#texto p {
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#texto button {
+    font-family: 'MyFont';
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(0, 118, 161);
+    color: white;
+    border: none;
+    align-self: center;
+}
+
+#imgs-texto {
+    background-color: rgb(255, 127, 127);
+    height: 300px;
+    width: 50%;
+}
+
+#rodape {
+    position: relative;
+    background-color: rgb(255, 200, 0);
+    width: 100%;
+    height: 100px;
+}
