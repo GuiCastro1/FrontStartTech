@@ -13,15 +13,16 @@
 }
 
 body {
-
-    background-color: #c3d8e8;
+    /* background-color: #c3d8e8; */
+    background-color: #c7dced;
 }
 
 main {
     position: relative;
     width: 90%;
+    /* background-color: #c3d8e8; */
+    background-color: #c7dced;
     height: 700px;
-    background-color: #c3d8e8;
     margin: auto;
 }
 
@@ -58,27 +59,14 @@ main {
 }
 
 .botao-conectar {
-    /* font-family: 'MyFont';
-    font-size: 12px;
-    background-color: #c3d8e8;
-    border: 2px solid rgb(0, 118, 161);
-    border-radius: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
-    height: auto;
-    font-weight: bold;
-    float: left; */
     width: 100px;
     height: auto;
-    
     font-family: 'MyFont';
     border-radius: 20px;
     padding: 10px;
     font-size: 15px;
     background-color:rgba(255, 255, 255, 0);
     color:  rgb(0, 118, 161);
-    border: ;
 }
 
 .botao-cadastrar {
@@ -93,7 +81,6 @@ main {
     border: none;
 }
 
-
 .menu-direito {
     position: relative;
     height: 50px;
@@ -107,40 +94,40 @@ main {
 #meio {
     position: relative;
     width: 100%;
-    height: 70%;
+    height: 600px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 10px;
     background-color: rgba(127, 255, 212, 0);
-    padding: 5%;
 }
 
 #texto {
     width: 50%;
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0);
     height: 300px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 15%;
+    padding: 20px;
 }
 
-#texto h2 {
-    color: red;
+#texto h1 {
+    color: rgb(0, 0, 0);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bolder;
-
+    height: 120px;
 }
 
 #texto p {
-    color: red;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #999;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: 500;
-
+    height: 100px;
 }
 
 #texto button {
@@ -151,13 +138,82 @@ main {
     background-color: rgb(0, 118, 161);
     color: white;
     border: none;
-    align-self: center;
+    width: 150px;
 }
 
 #imgs-texto {
-    background-color: rgb(255, 127, 127);
+    background-color: rgba(252, 192, 192, 0);
     height: 300px;
     width: 50%;
+    position: relative;
+    padding: 0px;
+}
+
+.big-mod{
+    background-color: rgba(0, 255, 255, 0);
+    border: 2px black solid;
+    background-color:#f7d3ca;
+    /* background-color:#f7c9b7; */
+    height: 280px;
+    width: 80%;
+    border-radius: 3%;
+}
+.header-banner{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #99999900; */
+    text-align: center;
+    padding: 10px;
+}
+.d{
+    float: right;
+}
+.c{
+    float: left;
+}
+.t{
+    text-align: center;
+    padding: 10px;
+}
+.im{
+    margin-left: 30px;
+}
+
+#shopping-cart{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+h4{
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-weight: lighter;
+    background-color: #f8f8ff;
+    /* background-color: rgb(214, 214, 214); */
+    border-radius: 10px 10px 0px 0px;
+}
+.button-check{
+    width: 150px;
+    height: auto;
+    font-family: 'MyFont';
+    padding: 3px;
+    font-size: 12px;
+    background-color: rgb(0, 118, 161);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    margin-left: 40px;
 }
 
 #rodape {
@@ -166,3 +222,9 @@ main {
     width: 100%;
     height: 100px;
 }
+
+    @media screen and (max-width: 992px) {
+      #meio {
+        flex-direction: column;
+      }
+    }
