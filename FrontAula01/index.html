@@ -23,7 +23,7 @@
             <div class="menu-direito">
                 <img src="assets/images/figura4.png" alt="">
                 <button class="botao-conectar">conectar</button>
-                <button class="botao-cadastrar" id="modal-cadastrar">Cadastre-se gratuitamente</button>
+                <button class="botao-cadastrar" id="modal-cadastrar" onclick="abrir()">Cadastre-se gratuitamente</button>
             </div>
         </header>
         <section id="meio">
@@ -49,19 +49,42 @@
                     <img src="assets/images/figua3.png" alt="">
                     <button class="button-check">Continue to Check</button>
                 </div>
-
-            </div>
-
-        </section>
-        <section>
-            <div>
-                background form
-                <div>form</div>
             </div>
         </section>
-
+        
+        
         <footer id="rodape">rodape</footer>
     </main>
+    <section>
+        <div class="teste">
+            <div class="modal">
+                <div class="fechar" onclick="fechar()">X</div>
+                <form>
+				<legend> <h2> Cadastre-se </h2> </legend>
+				<br />
+					<label>Digite seu nome: 
+					<input type="text" size="30" maxlength="30"  />
+					</label><br />
+					<label>Digite seu e-mail: 
+					<input type="mail" size="30" maxlength="30"  />
+					</label><br />
+					<label>Seu gênero: 
+					<select name="genero">
+						<option>masculino</option>
+						<option>feminino</option>
+						<option>outro</option>
+					</select>
+					</label><br />
+
+					<label>Digite sua senha:
+					<input type="password" size="8" />
+					</label>
+					<input type="submit" value="enviar" class="enviar" />
+				
+			</form>
+            </div>
+        </div>
+    </section>
 
     <script src="JS/main.js"></script>
 </body>

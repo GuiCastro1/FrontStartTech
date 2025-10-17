@@ -65,8 +65,8 @@ main {
     border-radius: 20px;
     padding: 10px;
     font-size: 15px;
-    background-color:rgba(255, 255, 255, 0);
-    color:  rgb(0, 118, 161);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 118, 161);
 }
 
 .botao-cadastrar {
@@ -149,16 +149,17 @@ main {
     padding: 0px;
 }
 
-.big-mod{
+.big-mod {
     background-color: rgba(0, 255, 255, 0);
     border: 2px black solid;
-    background-color:#f7d3ca;
+    background-color: #f7d3ca;
     /* background-color:#f7c9b7; */
     height: 280px;
     width: 80%;
     border-radius: 3%;
 }
-.header-banner{
+
+.header-banner {
     /* display: flex;
     align-items: center;
     justify-content: space-between;
@@ -167,43 +168,50 @@ main {
     text-align: center;
     padding: 10px;
 }
-.d{
+
+.d {
     float: right;
 }
-.c{
+
+.c {
     float: left;
 }
-.t{
+
+.t {
     text-align: center;
     padding: 10px;
-}
-.im{
-    margin-left: 30px;
+    color: rgb(255, 79, 79);
 }
 
-#shopping-cart{
+.im {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+#shopping-cart {
     position: absolute;
     top: 100px;
     left: 300px;
     background-color: rgb(255, 255, 255);
     width: 40%;
-    height: 200px;
+    height: 230px;
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px;
     display: flex;
     flex-direction: column;
-    
 }
-h4{
+
+h4 {
     border-bottom: 2px solid black;
     padding: 5px;
     font-weight: lighter;
-    background-color: #f8f8ff;
+    background-color: #f3f3ff;
     /* background-color: rgb(214, 214, 214); */
     border-radius: 10px 10px 0px 0px;
 }
-.button-check{
+
+.button-check {
     width: 150px;
     height: auto;
     font-family: 'MyFont';
@@ -223,8 +231,84 @@ h4{
     height: 100px;
 }
 
-    @media screen and (max-width: 992px) {
-      #meio {
+.teste {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility:hidden;
+    /* display: none; */
+}
+.modal{
+    position: absolute;
+    visibility:hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f3f3ff;
+    text-align: center;
+    width: 450px;
+    height: 450px;
+
+}
+.fechar {
+    height: 20px;
+    width: 20px;
+    color: #000;
+    float: right;
+    background-color: #f3f3ff;
+    /* padding: 10px; */
+    cursor: pointer;
+    border: solid;
+    z-index: 1000   ;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1da42c;
+    text-align: left;
+    width: 380px;
+    height: 320px;
+    padding: 20px;
+    border: 3px solid;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+input,
+select {
+    border: 1px solid;
+    /* background-color: #7093ac;*/
+    padding: 3px;
+}
+
+.enviar {
+    width: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+    #meio {
         flex-direction: column;
-      }
     }
+}
